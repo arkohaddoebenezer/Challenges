@@ -38,4 +38,24 @@ public class Main {
 In this version, the class name is capitalized, and the method name is changed to getCentury to better reflect its purpose. Additionally, I added .0 to 100.0 in the division to ensure that the division is performed in floating-point arithmetic, which is necessary if you want an accurate result when calculating the century.
 
 
-some test failed because I was dividing in integer instead of float.
+some test failed because I was dividing by integer instead of float.
+
+
+#interesting solutions
+
+#Solution by amar_m6 on code signal
+
+int solution(int year) {
+    return year%100==0 ? year/100 : year/100+1;
+}
+
+#Solution by Eduard_P_2 on code signal
+int solution(int year) {
+    return (year + 99)/ 100;
+}
+
+#Solution by Yuval_Scharf on code signal
+
+int solution(int year) {
+    return 1 + (year - 1) / 100;
+}
