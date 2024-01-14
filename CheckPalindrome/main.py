@@ -1,9 +1,6 @@
 class Main:
     def check_palindrome(self,inputString):
-        if(inputString==(inputString[::-1])):
-            return True
-        else:
-            return False
+        return inputString == inputString[::-1]
 my_object = Main()
 inputString = "aabaa"
 isPalindrome= my_object.check_palindrome(inputString)
