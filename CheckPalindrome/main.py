@@ -1,7 +1,5 @@
-class Main:
-    def check_palindrome(self,inputString):
-        return inputString == inputString[::-1]
-my_object = Main()
+def check_palindrome(inputString):
+    return inputString == inputString[::-1]
 inputString = "aabaa"
-isPalindrome= my_object.check_palindrome(inputString)
+isPalindrome= check_palindrome(inputString)
 print(f"is {inputString}a palindrome?: {isPalindrome}.")

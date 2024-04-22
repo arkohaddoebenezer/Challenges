@@ -9,6 +9,5 @@ public class Main {
     public static void main(String[] args) {
         Main myObject = new Main();
         System.out.println("is aabaa a palindrome?: " + myObject.checkPalindrome("aabaa")+ ".");
-       
     }
 }
